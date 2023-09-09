@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-pu-keblb4(&tzcuoob2022wuiglhyc!==ti0()mniqhx%u+jt!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -37,12 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'UserProfile',
-    'Advertisement',
     'AppUser',
-    'Car',
-    'CarModel',
+    'user_profile',
     'rest_framework',
+    'carmodel_app',
+    'car_app',
+    'advertisement_app',
 ]
 
 MIDDLEWARE = [
@@ -82,10 +82,10 @@ WSGI_APPLICATION = 'cars_proj.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'cars_proj',
-        'USER': 'noelbiggs',
-        'PASSWORD': '',
-        'HOST': 'localhost',
+        'NAME':'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'db',
         'PORT': 5432,
     }
 }
