@@ -1,0 +1,2 @@
+scp -i cars_proj.pem -r /Users/noelbiggs/VSC/code_platoon/week_15/day_01/cars_django/ ec2-user@ec2-18-189-195-184.us-east-2.compute.amazonaws.com:/home/ec2-user
+COMPOSE_DOCKER_CLI_BUILD=0 DOCKER_BUILDKIT=0 docker-compose up -d
